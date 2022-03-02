@@ -30,10 +30,7 @@ exports.addBook = async (req, res) => {
             data: savedBook
         })
 
-        res.status(400).json({
-            title: Book.title,
-            message: "Already present int the database"
-        })
+       
 
 
     } catch (error) {
